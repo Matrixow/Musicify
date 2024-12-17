@@ -1,0 +1,267 @@
+*{
+    font-family: roboto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background: #f1f1ff;
+    background-image: url(../img/a-background-which-describes-music--16645843\ \(2\).png);
+    opacity: 0.9;
+    z-index: -1;
+    height: 100vh;
+}
+
+body background-img{
+    filter: brightness(50%) contrast(50%) grayscale(70%);
+}
+
+.nav{
+    background: #fff;
+    border-radius: 2px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+.nav ul a{
+    display: inline;
+    margin: 0;
+    text-decoration: none;
+    padding: 5%;
+    color:rgb(176, 180, 180);
+    font-weight: bolder;
+    border-radius: 10px;
+    visibility: visible;
+    z-index: 10;
+
+}
+
+.nav #form1{
+    width: 150px;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    margin: 10px;
+    margin-right: 70px;
+    right: 0;
+
+}
+
+.nav ul input{
+    display: inline;
+    margin: 0;
+    text-decoration: none;
+    border: 1px solid rgb(176, 180, 180);
+    padding: 5px;
+    color: #353434;
+    border-radius: 20px;
+    visibility: visible;
+}
+
+
+.intro{
+    text-align: center;
+    font-family: roboto;
+    margin: 10px;
+    margin-top: 80px;
+    margin-left: 0;
+    font-size: 130%;
+    color:  #797982;
+    position: relative;
+
+}
+
+
+.intro:hover{
+    color:#5d5d78;
+}
+
+.nav ul a:hover{
+    border-radius: 20px;
+    background-color: rgba(199, 231, 241, 0.753);
+    color: rgb(255, 251, 251);
+    font-size:larger;
+}
+
+span.material-symbols-outlined{
+    color:rgb(176, 180, 180) ;
+    visibility: collapse;
+    font-size: x-large;
+}
+
+.a-img{
+    border-radius: 100px;
+    padding: 10px;
+    width: 80px;
+    height: auto;
+    position: relative;
+}
+
+.music_list{
+    margin-left: 0.3%;
+    width: 90%;
+    background: rgb(36, 34, 34);
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 160px;
+    
+}
+
+.music_list li{
+    display: block;
+    background: #544e4e;
+    border-radius: 15px;
+    font-family: kanit;
+    text-decoration: none;
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+    transition: padding 0.5s;
+
+}
+.music_list li:hover{
+    background-color: #747070;
+    padding: 15px;
+}
+
+.play_button button{
+    position: relative;
+    text-align: center;
+    padding: 25px;
+    font-size: larger;
+    border-radius: 100px;
+    border: none;
+    transition: padding 0.5s;
+    margin-left: 40%;
+    margin-bottom: 20px;
+
+}
+
+.play_button button:hover{
+    background-color: aquamarine; 
+    padding: 20px;
+    border-radius: 100px;
+    color: rgb(156, 146, 146);
+
+
+    }
+
+
+.now-playing{
+    margin-left: 0.2%;
+    width: 97%;
+    background: rgb(36, 34, 34);
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.now-playing audio{
+    position: relative;
+    width: 85%;
+}
+
+#now-playing-text{
+    margin-left: 6%;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px){
+    .nav ul a, .nav ul input{
+        visibility: hidden;
+        margin-left: 0;
+        font-weight: bolder;
+        width: 20px;
+        
+    }
+
+    .nav-responsive{
+        margin: 0;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    .nav-responsive ul a{
+        position: relative;
+        display: block;
+        margin: 2px;
+        text-decoration: none;
+        padding: 10px;
+        color: rgb(176, 180, 180);
+    }
+
+    .nav-responsive ul a:hover{
+        background-color: azure;
+    }
+
+    .nav-responsive ul input{
+        display: block;
+        position: relative;
+        margin: 0;
+        text-decoration: none;
+        border: 1px solid rgb(176, 180, 180);
+        padding: 5px;
+        color: rgb(67, 62, 62);
+        border-radius: 20px;
+        
+    }
+
+    /* header + .container{
+        margin-top: 70px;
+    } */
+
+
+    span.material-symbols-outlined{
+        visibility: visible;
+        color: rgb(176, 180, 180);
+        position: absolute;
+        float: right; right: 0;
+        padding-right: 20px;
+        font-size: 35px;
+        text-align: center;
+        z-index: 10;
+
+    
+        
+    }
+
+
+    .foot{
+        margin-left: 0;
+        font-size: 10px;
+        width: 92%;
+    }
+}

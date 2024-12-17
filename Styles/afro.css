@@ -1,0 +1,166 @@
+.body{
+    justify-content: center;
+}
+
+.side-cont{
+    position:fixed;
+    left: 0;
+    top: 60px;
+    width: 8%;
+    height: 100%;
+    padding: 10px;
+    background: whitesmoke;
+    z-index: 10;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.side-cont li{
+    display: block;
+    text-decoration: none;
+    color: rgb(122, 122, 126);
+    padding: 20px;
+
+}
+
+.side-cont li span{
+    visibility: visible;
+}
+
+
+
+
+span .material-symbols-outlined #ico{
+    width: 30px;
+}
+
+
+.music_list{
+    margin-left: 9.4%;
+    width: 86%;
+    background: rgb(36, 34, 34);
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 160px;
+    
+}
+
+.music_list li{
+    display: block;
+    background: #544e4e;
+    border-radius: 15px;
+    font-family: kanit;
+    text-decoration: none;
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    margin: 2px;
+    transition: padding 0.5s;
+
+}
+.music_list li:hover{
+    background-color: #747070;
+    padding: 15px;
+}
+
+.play_button button{
+    position: relative;
+    text-align: center;
+    padding: 25px;
+    font-size: larger;
+    border-radius: 100px;
+    border: none;
+    transition: padding 0.5s;
+    margin-left: 40%;
+    margin-bottom: 20px;
+
+}
+
+.play_button button:hover{
+    background-color: aquamarine; 
+    padding: 35;
+    border-radius: 100px;
+    color: rgb(156, 146, 146);
+
+
+    }
+
+
+.now-playing{
+    margin-left: 9.4%;
+    width: 100%;
+    background: rgb(36, 34, 34);
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+}
+
+.now-playing audio{
+    position: relative;
+    width: 85%;
+}
+
+#now-playing-text{
+    margin-left: 6%;
+}
+
+
+
+
+
+@media screen and (max-width:600px){ 
+    .side-cont{
+        display: none;
+    }
+
+    .music_list{
+        position: relative;
+        width: 80%;
+        margin-left: 0;
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        padding-bottom: 160px;
+        
+    }
+
+    .now-playing{
+        width: 100%;
+        margin-left: 0;
+        padding: 5px;
+        
+    }
+
+
+    .music_list li{
+        text-align: center;
+    }
+
+    .play_button button{
+        text-align: center;
+        padding: 15px;
+        font-size: large;
+        border-radius: 100px;
+        border: none;
+        margin-left: 35%;
+        margin-bottom: 10px;
+    }
+
+
+
+}
+
+

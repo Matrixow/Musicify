@@ -1,0 +1,332 @@
+
+.sidebar{
+    position: fixed;
+    background-color: rgba(201, 255, 255, 0.707);
+    height: 100%;
+    width: 50px;
+    margin-top: 63px;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: padding 1.5s;
+    border-top-right-radius: 20px;
+}
+
+.sidebar:hover{
+    padding: 45px;
+}
+
+.content{
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+
+.afro-beats{
+    margin: 20px;
+    margin-top: 35px;
+    background-color: aquamarine;
+    color: whitesmoke;
+    font-size: larger;
+    font-family: roboto;
+    padding: 70px; 
+    border-radius: 20px;
+    transition: padding 1s;
+    background-image: url(../Img/afrobeats.png);
+}
+
+.afro-beats a{
+    text-align: center;
+    background-color:dimgrey;
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.afro-beats, .artist, .hiphop, .gospel, .mixes{
+    transition: padding 1s;
+}
+.afro-beats:hover, .artist:hover, .hiphop:hover, .gospel:hover, .mixes:hover{
+    padding: 120px;
+}
+
+
+
+.nav-toggler-icon{
+    float: right;
+    visibility: hidden;
+}
+
+
+.artist{
+    margin: 20px;
+    margin-top: 35px;
+    background: #ff8888;
+    padding-top: 0;
+    padding: 100px;
+    border-radius: 20px;
+    /* position: relative; */
+    overflow: hidden;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    background-image: url(../Img/Artist2.png);
+    color: whitesmoke;
+}
+
+.artist a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: #dc3545;
+    color: whitesmoke;
+    border-radius: 20px;
+} 
+
+.artist img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    
+}
+
+.hiphop{
+    margin: 20px;
+    margin-top: 35px;
+    background: #ADD8E6;
+    background-image: url(../Img/hop.png);
+    padding: 110px;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-weight: bolder;
+    overflow: hidden;
+    width: 500px;
+
+}
+
+.hiphop a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: #9370DB;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: whitesmoke;
+}
+
+.mixes a{
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: greenyellow;
+}
+.mixes{
+    margin: 20px;
+    margin-top: 35px;
+    padding: 70px;
+    border-radius: 20px;
+    background-color: rgb(182, 253, 111);
+    overflow: hidden;
+}
+
+.mixes:hover{
+    padding: 100px;
+}
+
+.gospel a{
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: aqua;
+}
+
+.gospel{
+    margin: 20px;
+    margin-top: 35px;
+    background: #ADD8E6;
+    padding: 100px;
+    border-radius: 20px;
+}
+
+.foot a{
+    text-decoration: underline;
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.foot{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 95%;
+    overflow: hidden;
+    position: fixed;
+    background-color: #797982;
+    padding: 15px;
+    justify-content: center;
+    opacity: 10;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* for mobile screens */
+@media screen and (max-width:600px){
+    
+
+    .content{
+        flex-direction: row;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        justify-items: center;
+        margin-top: 10px;
+        
+    }
+    .afro-beats p{
+        font-size: 10px;
+    }
+    .afro-beats h1{
+        font-size: 20px;
+        font-family: roboto;
+    }
+
+    .afro-beats{
+        margin-top: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        height: 150px;
+        margin-left: 5px;
+        margin-right: 5px;
+        overflow: hidden;
+    }
+
+    .afro-beats:hover, .artist:hover, .gospel:hover, .hiphop:hover, .mixes:hover{
+        padding: 15px;
+    }
+
+
+    .afro-beats a{
+        opacity: 1;
+        margin-top: 3px;
+        text-align: center;
+        font-size: 15px;
+        background-color:dimgrey;
+        text-decoration: none;
+        width: auto;
+        height: auto;
+        color: white;
+        padding: 10px;
+    }
+
+    .artist p{
+        margin-top: 10px;
+    }
+
+    .artist a{
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .artist{
+        font-size: 10px;
+        margin-top: 60px;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        width: 100%;
+        height: 150px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+    .hiphop h2{
+        font-size: 13px;
+    }
+    .hiphop p{
+        font-size: 10px;
+    }
+
+    .hiphop{
+        font-size: 13px;
+        margin-top: 60px;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        padding: 20px;
+        width: 100px;
+        height: 80px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .gospel h2{
+        font-size: 13px;
+    }
+
+    .gospel{
+        font-size: 13px;
+        margin-top: 60px;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        padding: 20px;
+        width: 100px;
+        height: 80px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .mixes h2{
+        font-size: 13px;
+    }
+    .mixes{
+        font-size: 13px;
+        margin-top: 60px;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        height: 150px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .afro-beats, .artist, .gospel, .hiphop, .mixes{
+        margin-top: 20px;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+
+
+}

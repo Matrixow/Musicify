@@ -1,0 +1,135 @@
+body{
+    position: relative;
+}
+
+
+.artist_cont{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artist_individual_cont{
+    display: none;
+    position: relative;
+    background-color: white;
+    /* margin-left: 33%;
+    margin-top: 0.2%; */
+    width: 40%;
+    margin: auto;
+    height: 500px;
+    border-radius: 70px;
+    overflow: hidden;
+    animation: fade 5s ease-in;
+}
+
+.artist_individual_cont:first-child{
+    display: block;
+}
+
+.artist_individual_cont p{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+    margin: 70% 30px;
+    position: absolute;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(83, 81, 81);
+}
+
+.artistImage{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    
+}
+
+
+.left-button{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    margin-left: 15%;
+    z-index: 10;
+}
+
+.left-button button, .right-button button{
+    padding: 2em;
+    border: none;
+    border-radius: 100%;
+    transition: padding 0.5s;
+}
+
+.left-button button:hover, .right-button button:hover{
+    padding: 2.5em;
+    background-color: rgb(151, 153, 153) ;
+}
+
+.right-button{
+    position: absolute;
+    right: 0;
+    top: 40%;
+    margin-right:15% ;
+    z-index: 10;
+}
+
+.bio{
+    margin-top: 2%;
+    background-color: whitesmoke;
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+.bio #biography{
+    width: 90%;
+    text-align: center;
+    font-size: larger;
+    color: rgb(83, 81, 81);
+
+    
+    
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0.3;
+    }
+    20%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .artist_individual_cont{
+        height: 300px;
+        width: 70%;
+    }
+
+    .artistImage{
+        position: absolute;
+        height: auto;
+        width: auto;
+        /* margin-left: 30%; */
+        margin-top: 20px;
+    }
+
+    .bio #biography{
+        font-size: small;
+    }
+
+    .left-button, .right-button{
+        margin-top: 2%;
+    }
+}
+

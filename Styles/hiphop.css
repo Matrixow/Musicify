@@ -1,0 +1,42 @@
+.start{
+    font-size: x-large;
+    color: #797882;
+    font-weight: bolder;
+    text-align: center;
+    padding: 3%;
+    background-color: whitesmoke;
+}
+
+.start #read, #listen{
+    padding: 1.5%;
+    border: none;
+    border-radius: 4%;
+    font-weight: bolder;
+    font-size: large;
+    color: whitesmoke;
+    background: dodgerblue;
+    margin: 2%;
+}
+
+.intro img{
+    width: 15%;
+    height: 15%;
+    border-radius: 100%;
+}
+
+.hiphop-info{
+    background: whitesmoke;
+    
+}
+
+.hiphop-info p{
+    color: #797882;
+    text-align:left;
+    margin-left: 3%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.music_list, .now-playing, .hiphop-info{
+    visibility: hidden;
+}

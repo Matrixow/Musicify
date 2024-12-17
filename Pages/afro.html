@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/global.css">
+    <link rel="stylesheet" href="../Styles/afro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Roboto:wght@500&display=swap');
+      </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav" id="nav">
+            <ul>
+                <span class="material-symbols-outlined">menu</span>
+                <a href="index.html">Musicify</a>
+                <a href="#">Albums</a>
+                <form action="" method="get" id="form1"><input type="search" placeholder="search for music"></form>
+                
+
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="side-cont">
+        <li><span class="material-symbols-outlined" id="side-ico">expand_circle_right</span></li>
+        <img src="../Img/sarkcess.jpeg" alt="Sarkodie" class="a-img">
+        <img src="../Img/bhim1.jpeg" alt="Stonebwoy" class="a-img">
+        <img src="../img/adina.jpeg" alt="adina" class="a-img">
+        <img src="../Img/kidi.jpeg" alt="Kidi" class="a-img">
+        <img src="../Img/gyakie.jpeg" alt="Gyakie" class="a-img">
+    </div>
+
+    <div class="content">
+
+        <div class="intro">
+            <h1>Afrobeats</h1>
+        </div>
+
+        <div class="music_list">
+            <h2>Music list</h2> <div class="play_button"><span><button onclick="play_all()">Play</button></span></div>
+            
+        </div>
+
+    </div>
+
+    <div class="now-playing">
+        <p id="now-playing-text">Now playing</p>
+        <audio controls autoplay>
+            <source src="" id="current-audio">
+        </audio>
+    </div>
+
+
+
+<script src="../Script/global.js"></script>
+<script src="../Script/afro.js" defer></script>
+</body>
+</html>
